@@ -7,17 +7,6 @@
         </li>
     </ul>
 
+    <app-hero-detail [hero]="selectedHero"></app-hero-detail>
 
-    <!-- Data binding ngModel -->
-
-    <div *ngIf="selectedHero">
-        <h2>{{selectedHero.name | uppercase}} Detail</h2>
-        <div><span>Id: </span> {{selectedHero.id}}</div>
-        <div><span>Name: </span> {{selectedHero.name}}</div>
-        <div>
-            <label>Edit name: </label>
-            <input [(ngModel)] = "selectedHero.name" placeholder="name"/>
-        </div>
-    </div>
-    
 </div>
